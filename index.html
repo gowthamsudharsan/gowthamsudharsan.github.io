@@ -1,132 +1,207 @@
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Gowtham Sudharsan | Data Analyst</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-        header { background-color: #1e1e2f; color: white; padding: 40px 20px; text-align: center; }
-        section { padding: 40px 20px; max-width: 900px; margin: auto; }
-        h2 { color: #1e1e2f; }
-        a { color: #0056b3; text-decoration: none; }
-        nav a { margin: 0 15px; color: #f0f0f0; font-weight: bold; }
-        .skills span, .certs span { display: inline-block; background: #efefef; margin: 5px; padding: 5px 10px; border-radius: 5px; }
-        .project, .experience, .education { margin-bottom: 25px; }
-        footer { background-color: #f4f4f4; text-align: center; padding: 20px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gowtham Sudharsan | Data Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <style>
+    :root {
+      --primary: #2b2d42;
+      --accent: #ef476f;
+      --background: #f8f9fa;
+      --card-bg: #ffffff;
+      --highlight: #ffd166;
+      --pastel-blue: #a8dadc;
+      --pastel-purple: #cdb4db;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background: var(--background);
+      color: var(--primary);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+    .hero {
+      background: linear-gradient(135deg, var(--pastel-blue), var(--pastel-purple));
+      color: var(--primary);
+      padding: 4rem 0;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    .social-links {
+      margin-top: 1.5rem;
+    }
+    .social-links a {
+      color: var(--primary);
+      font-size: 1.6rem;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+    .social-links a:hover {
+      color: var(--accent);
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border-left: 5px solid var(--accent);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+    .project-card a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 500;
+    }
+    .skill-tag {
+      display: inline-block;
+      background: var(--pastel-blue);
+      color: var(--primary);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      margin: 0.25rem;
+      font-size: 0.9rem;
+    }
+    footer {
+      background: var(--pastel-purple);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Gowtham Sudharsan</h1>
-        <p>Data Analyst | MSc Data Analytics</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <section class="hero">
+    <div class="container">
+      <h1>Gowtham Sudharsan</h1>
+      <p>Data Analyst | MSc Data Analytics | SQL | Python | Power BI | Machine Learning</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/gowtham-sudharsan/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:gowthamreddy710@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/gowthamsudharsan" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Analytical and detail-oriented Data Analyst with 2 years of professional experience at HSBC, specializing in data wrangling, SQL automation, and cross-functional reporting. Proficient in uncovering trends and delivering actionable insights using tools such as Python, Tableau, and Power BI. Currently pursuing MSc in Data Analytics at National College of Ireland with hands-on experience in predictive modeling, machine learning, and dashboard development.</p>
-    </section>
+  <main class="container">
+    <div class="card-grid">
 
-    <section id="experience">
+      <div class="card">
         <h2>Professional Experience</h2>
-        <div class="experience">
-            <strong>Data Analyst – HSBC (Oct 2022 – July 2024)</strong>
-            <ul>
-                <li>Analyzed over 5.8M records using SQL and Python to derive meaningful business insights.</li>
-                <li>Automated data extraction and reporting workflows, improving delivery speed and accuracy.</li>
-                <li>Built dashboards and reports, increasing report accuracy by 34% and enhancing stakeholder understanding.</li>
-                <li>Collaborated across teams to deliver tailored data-driven solutions and improve performance visibility.</li>
-                <li>Validated and centralized 3.6M+ records, and optimized SQL for 80% faster processing.</li>
-            </ul>
+        <div class="project-card">
+          <h3>Data Analyst – HSBC</h3>
+          <p>Oct 2022 – July 2024</p>
+          <ul>
+            <li>Analyzed 5.8M+ records using SQL and Python.</li>
+            <li>Automated reporting pipelines and improved data accuracy by 34%.</li>
+            <li>Enhanced stakeholder reporting and query performance by 80%.</li>
+          </ul>
         </div>
-        <div class="experience">
-            <strong>Data Analyst Intern – Exposys Data Labs (Aug 2020 – Sept 2020)</strong>
-            <ul>
-                <li>Segmented customers using K-Means clustering based on age, gender, income, and spending behavior.</li>
-                <li>Achieved 83% marketing efficiency improvement with targeted campaign analysis.</li>
-                <li>Visualized clustering results to guide marketing and segmentation strategies.</li>
-            </ul>
+        <div class="project-card">
+          <h3>Data Analyst Intern – Exposys Data Labs</h3>
+          <p>Aug 2020 – Sept 2020</p>
+          <ul>
+            <li>Performed customer segmentation with KMeans and Python.</li>
+            <li>Improved marketing efficiency by 83% through insights.</li>
+          </ul>
         </div>
-    </section>
+      </div>
 
-    
-<section id="projects">
-    <h2>Academic Projects</h2>
-
-    <div class="project">
-        <strong>Credit Card Fraud Detection Using Scalable Systems</strong> –
-        <a href="https://github.com/gowthamsudharsan/Credit_Card_Fraud_Detection_Using_Scalable_Systems" target="_blank">GitHub</a>
-        <p>Implemented a scalable fraud detection pipeline using Apache Spark and Python. Processed large volumes of transaction data and trained a classification model to identify fraudulent activity.</p>
-    </div>
-
-    <div class="project">
-        <strong>Impact of Weather on Crop Production and Market Prices</strong> –
-        <a href="https://github.com/gowthamsudharsan/Impact-of-Weather-on-Crop-Production-and-Market-price" target="_blank">GitHub</a>
-        <p>Analyzed weather patterns and crop yield across Indian districts using Python and MongoDB. Developed Power BI dashboards to visualize the relationship between weather variability and agricultural prices.</p>
-    </div>
-
-    <div class="project">
-        <strong>PRIMARK US Sales Prediction Using Business Intelligence</strong> –
-        <a href="https://github.com/gowthamsudharsan/PRIMARK_US_SALES_PREDICTION_USING_BI" target="_blank">GitHub</a>
-        <p>Utilized Power BI and SQL to forecast PRIMARK’s US sales performance. Combined historical sales data with economic indicators and produced interactive dashboards for stakeholder reporting.</p>
-    </div>
-
-    <div class="project">
-        <strong>Time Series and MLR Model for Statistical Analysis</strong> –
-        <a href="https://github.com/gowthamsudharsan/Time-Series-and-MLR-model-for-Statistical-Analysis" target="_blank">GitHub</a>
-        <p>Built time series and multiple linear regression models using Python to analyze trends and predict outcomes. Explored various statistical metrics and applied visualization for clearer interpretation.</p>
-    </div>
-</section>
-    
-    <section id="education">
-        <h2>Education</h2>
-        <div class="education">
-            <strong>MSc in Data Analytics</strong><br>
-            National College of Ireland, Dublin (Expected Sept 2025)
-            <p>Modules: Data Mining, Machine Learning, Deep Learning, Business Intelligence, Analytics Programming, Data Visualization</p>
+      <div class="card">
+        <h2>Academic Projects</h2>
+        <div class="project-card">
+          <h3>Credit Card Fraud Detection</h3>
+          <a href="https://github.com/gowthamsudharsan/Credit_Card_Fraud_Detection_Using_Scalable_Systems">GitHub</a>
+          <p>Used Apache Spark and Python for scalable classification of fraud cases.</p>
         </div>
-        <div class="education">
-            <strong>B.E in Electronics and Communications Engineering</strong><br>
-            MVJ College of Engineering, Bangalore, India (Aug 2022)
+        <div class="project-card">
+          <h3>Weather Impact on Crop Production</h3>
+          <a href="https://github.com/gowthamsudharsan/Impact-of-Weather-on-Crop-Production-and-Market-price">GitHub</a>
+          <p>Analyzed crop yield using Python, MongoDB, and Power BI dashboards.</p>
         </div>
-    </section>
+        <div class="project-card">
+          <h3>PRIMARK US Sales Prediction</h3>
+          <a href="https://github.com/gowthamsudharsan/PRIMARK_US_SALES_PREDICTION_USING_BI">GitHub</a>
+          <p>Created BI dashboards and SQL analytics to forecast sales trends.</p>
+        </div>
+        <div class="project-card">
+          <h3>Time Series & MLR Statistical Analysis</h3>
+          <a href="https://github.com/gowthamsudharsan/Time-Series-and-MLR-model-for-Statistical-Analysis">GitHub</a>
+          <p>Built regression models and time series plots for prediction using Python.</p>
+        </div>
+      </div>
 
-    <section id="skills">
+      <div class="card">
         <h2>Technical Skills</h2>
-        <div class="skills">
-            <span>SQL</span><span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span>
-            <span>MongoDB</span><span>PostgreSQL</span><span>Azure</span><span>BigData</span><span>Power BI</span><span>Tableau</span>
-            <span>Excel</span><span>Alteryx</span><span>ETL</span><span>Data Validation</span>
+        <div>
+          <span class="skill-tag">SQL</span><span class="skill-tag">Python</span><span class="skill-tag">Tableau</span>
+          <span class="skill-tag">Power BI</span><span class="skill-tag">MongoDB</span><span class="skill-tag">Alteryx</span>
+          <span class="skill-tag">PostgreSQL</span><span class="skill-tag">Azure</span><span class="skill-tag">BigData</span>
         </div>
-    </section>
+      </div>
 
-    <section id="certifications">
+      <div class="card">
+        <h2>Education</h2>
+        <div class="project-card">
+          <h3>MSc in Data Analytics</h3>
+          <p>National College of Ireland, Dublin – Expected Sept 2025</p>
+        </div>
+        <div class="project-card">
+          <h3>B.E. Electronics and Communication</h3>
+          <p>MVJ College of Engineering, Bangalore – Aug 2022</p>
+        </div>
+      </div>
+
+      <div class="card">
         <h2>Certifications & Achievements</h2>
-        <div class="certs">
-            <span>Award for Best Performance – HSBC DAO (2023)</span>
-            <span>Python Programming – Coursera</span>
-            <span>Alteryx & Python for ML – LinkedIn Learning</span>
-            <span>Intro to Python – DataCamp</span>
-        </div>
-    </section>
+        <ul>
+          <li>Award for Best Performance – HSBC DAO (2023)</li>
+          <li>Python Programming – Coursera</li>
+          <li>Alteryx & Python for ML – LinkedIn Learning</li>
+          <li>Intro to Python – DataCamp</li>
+        </ul>
+      </div>
+    </div>
+  </main>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:gowthamreddy710@gmail.com">gowthamreddy710@gmail.com</a></p>
-        <p>Phone: <a href="callto: +353-894748911">+353-894748911</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/gowtham-sudharsan/" target="_blank">linkedin.com/in/gowtham-sudharsan</a></p>
-        <p>GitHub: <a href="https://github.com/gowthamsudharsan" target="_blank">github.com/gowthamsudharsan</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Gowtham Sudharsan</p>
-    </footer>
+  <footer>
+    <p>© 2025 Gowtham Sudharsan | <a href="mailto:gowthamreddy710@gmail.com">gowthamreddy710@gmail.com</a></p>
+  </footer>
 </body>
 </html>
