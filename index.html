@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,53 +16,28 @@
       --pastel-blue: #a8dadc;
       --pastel-purple: #cdb4db;
     }
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Times New Roman', Times, serif;
       background: var(--background);
       color: var(--primary);
       line-height: 1.6;
     }
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 0 20px;
-    }
+    .container { max-width: 1200px; margin: auto; padding: 0 20px; }
     .hero {
       background: linear-gradient(135deg, var(--pastel-blue), var(--pastel-purple));
       color: var(--primary);
-      padding: 4rem 0;
-      margin-bottom: 2rem;
-      text-align: center;
+      padding: 4rem 0; margin-bottom: 2rem; text-align: center;
     }
-    .hero h1 {
-      font-size: 2.8rem;
-      font-weight: 600;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-    .social-links {
-      margin-top: 1.5rem;
-    }
+    .hero h1 { font-size: 2.8rem; font-weight: 600; }
+    .hero p { font-size: 1.2rem; margin-top: 0.5rem; }
+    .social-links { margin-top: 1.5rem; }
     .social-links a {
-      color: var(--primary);
-      font-size: 1.6rem;
-      margin: 0 10px;
-      transition: color 0.3s ease;
+      color: var(--primary); font-size: 1.6rem; margin: 0 10px; transition: color 0.3s ease;
     }
-    .social-links a:hover {
-      color: var(--accent);
-    }
+    .social-links a:hover { color: var(--accent); }
     .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;
     }
     .card {
       background: var(--card-bg);
@@ -73,49 +47,28 @@
       box-shadow: 0 5px 15px rgba(0,0,0,0.05);
       transition: transform 0.3s ease;
     }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .project-card h3 {
-      margin-bottom: 0.5rem;
-      color: var(--accent);
-    }
-    .project-card a {
-      text-decoration: none;
-      color: var(--primary);
-      font-weight: 500;
-    }
+    .card:hover { transform: translateY(-5px); }
+    .project-card h3 { margin-bottom: 0.5rem; color: var(--accent); }
+    .project-card a { text-decoration: none; color: var(--primary); font-weight: 500; }
     .skill-tag {
-      display: inline-block;
-      background: var(--pastel-blue);
-      color: var(--primary);
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      margin: 0.25rem;
-      font-size: 0.9rem;
+      display: inline-block; background: var(--pastel-blue); color: var(--primary);
+      padding: 0.5rem 1rem; border-radius: 20px; margin: 0.25rem; font-size: 0.9rem;
     }
-    footer {
-      background: var(--pastel-purple);
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    footer a {
-      color: var(--primary);
-      text-decoration: none;
-    }
+    footer { background: var(--pastel-purple); text-align: center; padding: 1rem; margin-top: 2rem; }
+    footer a { color: var(--primary); text-decoration: none; }
+    ul { margin-left: 1.1rem; }
   </style>
 </head>
 <body>
   <section class="hero">
     <div class="container">
       <h1>Gowtham Sudharsan</h1>
-      <p>Data Analyst | Analytical Professional with 2 years of experience in Data Managment</p>
-      <p>MSc in Data Analytics | Python | SQL | Tableau | Azure | EDA</p>
+      <p>Data Analyst with ~3 years of analytical experience (including ~2 years in financial services at HSBC)</p>
+      <p>MSc in Data Analytics (NCI) | SQL | Python | Tableau | Power BI | Alteryx | ETL & Automation</p>
       <div class="social-links">
-        <a href="https://www.linkedin.com/in/gowtham-sudharsan/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:gowthamreddy710@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://github.com/gowthamsudharsan" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gowtham-sudharsan/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:gowthamreddy710@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/gowthamsudharsan" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
       </div>
     </div>
   </section>
@@ -123,81 +76,126 @@
   <main class="container">
     <div class="card-grid">
 
+      <!-- Profile -->
       <div class="card">
-        <h2>Professional Experience</h2>
-        <div class="project-card">
-          <h3>Data Analyst – HSBC</h3>
-          <p>Oct 2022 – July 2024</p>
-          <ul>
-            <li>Analyzed 5.8M+ records using SQL and Python.</li>
-            <li>Automated reporting pipelines and improved data accuracy by 34%.</li>
-            <li>Enhanced stakeholder reporting and query performance by 80%.</li>
-          </ul>
-        </div>
-        <div class="project-card">
-          <h3>Data Analyst Intern – Exposys Data Labs</h3>
-          <p>Aug 2020 – Sept 2020</p>
-          <ul>
-            <li>Performed customer segmentation with KMeans and Python.</li>
-            <li>Improved marketing efficiency by 83% through insights.</li>
-          </ul>
+        <h2>Profile</h2>
+        <p>
+          Data Analyst with ~3 years of analytical experience, including ~2 years in industry at HSBC and 1 year of advanced academic training (MSc Data Analytics, National College of Ireland).
+          Skilled in developing dashboards, reporting solutions, and analytical models to drive operational, business and financial performance.
+          Proficient in SQL, Tableau, Power BI, Python, and cloud-based environments. Adept at capturing business requirements, translating them into technical specifications, and delivering data-driven insights to stakeholders across departments. Strong track record in process improvement, automation, team management, and stakeholder engagement.
+        </p>
+      </div>
+
+      <!-- Core Competencies -->
+      <div class="card">
+        <h2>Core Competencies</h2>
+        <div>
+          <span class="skill-tag">Data Analysis & Visualization</span>
+          <span class="skill-tag">Dashboard & KPI Reporting</span>
+          <span class="skill-tag">Business & Financial Analysis</span>
+          <span class="skill-tag">ML Models & Forecasting</span>
+          <span class="skill-tag">Data Quality & Validation</span>
+          <span class="skill-tag">Process Improvement & Automation</span>
+          <span class="skill-tag">Requirements Gathering</span>
+          <span class="skill-tag">Stakeholder Management</span>
+          <span class="skill-tag">Agile Project Support</span>
+          <span class="skill-tag">UAT & Team Management</span>
         </div>
       </div>
 
-      <div class="card">
-        <h2>Academic Projects</h2>
-        <div class="project-card">
-          <h3>Credit Card Fraud Detection</h3>
-          <a href="https://github.com/gowthamsudharsan/Credit_Card_Fraud_Detection_Using_Scalable_Systems">GitHub</a>
-          <p>Used Apache Spark and Python for scalable classification of fraud cases.</p>
-        </div>
-        <div class="project-card">
-          <h3>Weather Impact on Crop Production</h3>
-          <a href="https://github.com/gowthamsudharsan/Impact-of-Weather-on-Crop-Production-and-Market-price">GitHub</a>
-          <p>Analyzed crop yield using Python, MongoDB, and Power BI dashboards.</p>
-        </div>
-        <div class="project-card">
-          <h3>PRIMARK US Sales Prediction</h3>
-          <a href="https://github.com/gowthamsudharsan/PRIMARK_US_SALES_PREDICTION_USING_BI">GitHub</a>
-          <p>Created BI dashboards and SQL analytics to forecast sales trends.</p>
-        </div>
-        <div class="project-card">
-          <h3>Time Series & MLR Statistical Analysis</h3>
-          <a href="https://github.com/gowthamsudharsan/Time-Series-and-MLR-model-for-Statistical-Analysis">GitHub</a>
-          <p>Built regression models and time series plots for prediction using Python.</p>
-        </div>
-      </div>
-
+      <!-- Technical Skills -->
       <div class="card">
         <h2>Technical Skills</h2>
-        <div>
-          <span class="skill-tag">SQL</span><span class="skill-tag">Python</span><span class="skill-tag">Tableau</span>
-          <span class="skill-tag">Power BI</span><span class="skill-tag">MongoDB</span><span class="skill-tag">Alteryx</span>
-          <span class="skill-tag">PostgreSQL</span><span class="skill-tag">Azure</span><span class="skill-tag">BigData</span>
+        <p><strong>Languages:</strong> SQL, Python</p>
+        <p><strong>Tools:</strong> Tableau, Power BI, Excel, Alteryx, PostgreSQL, Snowflake (familiar), Databricks (familiar), MongoDB</p>
+        <p><strong>Methods:</strong> Exploratory Data Analysis, ETL, Dashboard Development, Data Quality Assurance, Automation, Machine Learning Models, UAT, CRM (Salesforce)</p>
+        <p><strong>Domain Expertise:</strong> Financial Performance Analysis, Operational Analytics, Business Process Optimization</p>
+      </div>
+
+      <!-- Professional Experience -->
+      <div class="card">
+        <h2>Professional Experience</h2>
+
+        <div class="project-card">
+          <h3>Data Analyst – HSBC</h3>
+          <p>October 2022 – July 2024 &nbsp;|&nbsp; Bangalore, India</p>
+          <ul>
+            <li>Developed automated reports in SQL, Python, Alteryx and Excel to monitor KPIs, operational efficiency, and customer metrics.</li>
+            <li>Extracted, cleaned, and transformed 5.8M+ customer profile records using SQL for data-driven decision-making.</li>
+            <li>Partnered with finance, operations, and IT teams to capture business requirements and translate them into technical reporting solutions.</li>
+            <li>Created data validation processes to ensure accuracy and consistency across multiple reporting platforms.</li>
+            <li>Optimized SQL queries and automated reporting workflows, increasing reporting efficiency.</li>
+            <li>Reconciled data between legacy systems and consumer data hubs, maintaining data integrity and accuracy leading to reporting of credit data.</li>
+            <li>Conducted margin and performance analysis, presenting actionable recommendations to senior management.</li>
+            <li>Supported UAT for system enhancements, ensuring reporting accuracy in production environments.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <h3>Data Analyst Intern – Exposys Data Labs</h3>
+          <p>August 2020 – September 2020 &nbsp;|&nbsp; Bangalore, India</p>
+          <ul>
+            <li>Performed customer segmentation using K-Means clustering to analyze gender, age, and spending behavior.</li>
+            <li>Enhanced targeted marketing efficiency by 83% through data-driven insights.</li>
+            <li>Created visualizations of clustering results to inform client marketing strategy.</li>
+          </ul>
         </div>
       </div>
 
+      <!-- Academic Projects -->
+      <div class="card">
+        <h2>Academic Projects</h2>
+
+        <div class="project-card">
+          <h3>PRIMARK US Sales Prediction Using Business Intelligence</h3>
+          <a href="https://github.com/gowthamsudharsan/PRIMARK_US_SALES_PREDICTION_USING_BI" target="_blank">GitHub</a>
+          <p>Utilized Power BI and SQL to forecast PRIMARK’s US sales performance. Combined historical sales data with economic indicators and produced interactive dashboards for stakeholder reporting.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Impact of Weather on Crop Production and Market Prices</h3>
+          <a href="https://github.com/gowthamsudharsan/Impact-of-Weather-on-Crop-Production-and-Market-price" target="_blank">GitHub</a>
+          <p>Analyzed weather patterns and crop yield across Indian districts using Python and MongoDB. Utilized PostgreSQL for efficient data storage, management, and retrieval of large-scale datasets; built Power BI dashboards to visualize relationships between weather variability and prices.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Credit Card Fraud Detection Using Scalable Systems</h3>
+          <a href="https://github.com/gowthamsudharsan/Credit_Card_Fraud_Detection_Using_Scalable_Systems" target="_blank">GitHub</a>
+          <p>Implemented a scalable fraud detection pipeline using Apache Spark and Python. Processed large volumes of transaction data and trained a classification model to identify fraudulent activity.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Time Series and MLR Model for Statistical Analysis</h3>
+          <a href="https://github.com/gowthamsudharsan/Time-Series-and-MLR-model-for-Statistical-Analysis" target="_blank">GitHub</a>
+          <p>Built time series and multiple linear regression models using Python to analyze trends and predict outcomes with clear visualization of results.</p>
+        </div>
+      </div>
+
+      <!-- Education -->
       <div class="card">
         <h2>Education</h2>
         <div class="project-card">
           <h3>MSc in Data Analytics</h3>
-          <p>National College of Ireland, Dublin – Expected Sept 2025</p>
+          <p>National College of Ireland, Dublin &nbsp;|&nbsp; Sept 2025</p>
         </div>
         <div class="project-card">
-          <h3>B.E. Electronics and Communication</h3>
-          <p>MVJ College of Engineering, Bangalore – Aug 2022</p>
+          <h3>B.E. in Electronics and Communications Engineering</h3>
+          <p>MVJ College of Engineering, Bangalore, India &nbsp;|&nbsp; Aug 2022</p>
         </div>
       </div>
 
+      <!-- Certifications & Achievements -->
       <div class="card">
         <h2>Certifications & Achievements</h2>
         <ul>
-          <li>Award for Best Performance – HSBC DAO (2023)</li>
+          <li>Awarded for efficient working and best performance at HSBC DAO (2023–24)</li>
+          <li>Volunteering certificate for WALKATHON at HSBC; recognized for organizing DAO Data Summit 2024</li>
           <li>Python Programming – Coursera</li>
-          <li>Alteryx & Python for ML – LinkedIn Learning</li>
-          <li>Intro to Python – DataCamp</li>
+          <li>Alteryx; Python for Machine Learning – LinkedIn Learning</li>
+          <li>Introduction to Python – DataCamp</li>
         </ul>
       </div>
+
     </div>
   </main>
 
