@@ -12,7 +12,6 @@
       --accent: #ef476f;
       --background: #f8f9fa;
       --card-bg: #ffffff;
-      --highlight: #ffd166;
       --pastel-blue: #a8dadc;
       --pastel-purple: #cdb4db;
     }
@@ -21,54 +20,65 @@
       font-family: 'Times New Roman', Times, serif;
       background: var(--background);
       color: var(--primary);
-      line-height: 1.6;
+      line-height: 1.5;
     }
-    .container { max-width: 1200px; margin: auto; padding: 0 20px; }
+    .container { max-width: 1100px; margin: auto; padding: 0 20px; }
     .hero {
       background: linear-gradient(135deg, var(--pastel-blue), var(--pastel-purple));
-      color: var(--primary);
-      padding: 4rem 0; margin-bottom: 2rem; text-align: center;
+      padding: 3rem 0;
+      text-align: center;
     }
-    .hero h1 { font-size: 2.8rem; font-weight: 600; }
-    .hero p { font-size: 1.2rem; margin-top: 0.5rem; }
-    .social-links { margin-top: 1.5rem; }
+    .hero h1 { font-size: 2.6rem; font-weight: 600; }
+    .hero p { font-size: 1.1rem; margin-top: 0.4rem; }
+    .social-links { margin-top: 1rem; }
     .social-links a {
-      color: var(--primary); font-size: 1.6rem; margin: 0 10px; transition: color 0.3s ease;
+      color: var(--primary); font-size: 1.5rem; margin: 0 10px;
     }
-    .social-links a:hover { color: var(--accent); }
     .card-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
     }
     .card {
       background: var(--card-bg);
       border-left: 5px solid var(--accent);
-      border-radius: 12px;
-      padding: 2rem;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
-    .card:hover { transform: translateY(-5px); }
-    .project-card h3 { margin-bottom: 0.5rem; color: var(--accent); }
-    .project-card a { text-decoration: none; color: var(--primary); font-weight: 500; }
-    .skill-tag {
-      display: inline-block; background: var(--pastel-blue); color: var(--primary);
-      padding: 0.5rem 1rem; border-radius: 20px; margin: 0.25rem; font-size: 0.9rem;
-    }
-    footer { background: var(--pastel-purple); text-align: center; padding: 1rem; margin-top: 2rem; }
-    footer a { color: var(--primary); text-decoration: none; }
+    h2 { margin-bottom: 0.8rem; color: var(--accent); }
+    h3 { margin-bottom: 0.3rem; }
     ul { margin-left: 1.1rem; }
+    .skill-tag {
+      display: inline-block;
+      background: var(--pastel-blue);
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      margin: 0.2rem;
+      font-size: 0.85rem;
+    }
+    footer {
+      background: var(--pastel-purple);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
   </style>
 </head>
+
 <body>
+
+  <!-- HERO (UNCHANGED AS REQUESTED) -->
   <section class="hero">
     <div class="container">
       <h1>Gowtham Sudharsan</h1>
       <p>Analytical Data Analyst | ~3 years in Data & BI | MSc Data Analytics (NCI)</p>
       <p>Python | SQL | Tableau | Power BI | Machine Learning | ETL Automation | Ex-HSBC</p>
       <div class="social-links">
-        <a href="https://www.linkedin.com/in/gowtham-sudharsan/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:gowthamreddy710@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://github.com/gowthamsudharsan" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gowtham-sudharsan/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:gowthamreddy710@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/gowthamsudharsan" target="_blank"><i class="fab fa-github"></i></a>
       </div>
     </div>
   </section>
@@ -76,114 +86,83 @@
   <main class="container">
     <div class="card-grid">
 
-      <!-- Profile -->
+      <!-- PROFESSIONAL SUMMARY -->
       <div class="card">
-        <h2>About</h2>
+        <h2>Profile</h2>
         <p>
-          Analytical and detail-oriented Data Analyst with ~3 years of hands-on experience, including ~2 years at HSBC and academic training (MSc Data Analytics, NCI). Proficient in leveraging SQL, Python, Power BI, Tableau, and automation tools to deliver insights and streamline business operations. Passionate about transforming raw data into strategic value for financial and operational gains.
+          Results-driven Data/Business Analyst with ~3 years of experience including 2+ years at HSBC managing 5.8M+ records. Skilled in SQL, Python automation, BI dashboards, data migration, stakeholder management, and Agile delivery. Currently working in retail operations in Ireland while actively applying analytical and leadership expertise in fast-paced environments.
         </p>
       </div>
 
-      <!-- Core Competencies -->
-      <div class="card">
-        <h2>Core Competencies</h2>
-        <div>
-          <span class="skill-tag">Data Analysis & Visualization</span>
-          <span class="skill-tag">KPI Data management</span>
-          <span class="skill-tag">KPI Dashboarding</span>
-          <span class="skill-tag">Predictive Modeling</span>
-          <span class="skill-tag">Machine Learning</span>
-          <span class="skill-tag">BI Reporting and Visualization</span>
-          <span class="skill-tag">Process Automation</span>
-          <span class="skill-tag">Stakeholder Engagement and Team Management</span>
-        </div>
-      </div>
-
-      <!-- Technical Skills -->
-      <div class="card">
-        <h2>Technical Skills</h2>
-        <p><strong>Languages:</strong> SQL, Python</p>
-        <p><strong>Tools:</strong> Tableau, Power BI, Excel, Alteryx, PostgreSQL, MongoDB</p>
-        <p><strong>Techniques:</strong> EDA, ETL, Dashboarding, Data Quality, Machine Learning, UAT</p>
-        <p><strong>Domain:</strong> Financial & Operations Analytics, Project Optimization</p>
-      </div>
-
-      <!-- Professional Experience -->
+      <!-- PROFESSIONAL EXPERIENCE -->
       <div class="card">
         <h2>Professional Experience</h2>
-        <div class="project-card">
-          <h3>Data Analyst – HSBC</h3>
-          <p>Oct 2022 – Jul 2024 &nbsp;|&nbsp; Bangalore, India</p>
-          <ul>
-            <li>Developed automated SQL, Python, and Alteryx reports to monitor KPIs and customer analytics for 5.8M+ records.</li>
-            <li>Optimized reporting workflows, improving data accuracy and efficiency by 34%–80%.</li>
-            <li>Worked cross-functionally to translate requirements into actionable data-driven insights and automation solutions.</li>
-          </ul>
-        </div>
-        <div class="project-card">
-          <h3>Merchandiser – FMI Field Management</h3>
-          <p>Jan 2025 – Present &nbsp;|&nbsp; Dublin, Ireland</p>
-          <ul>
-            <li>Managed inventory, ensured product freshness, and supported operational excellence in retail environments.</li>
-          </ul>
-        </div>
-      </div>
 
-      <!-- MSc Thesis Highlight -->
-      <div class="card">
-        <h2>MSc Thesis Project</h2>
-        <div class="project-card">
-          <h3>Dual Model Vehicle Detection in Adverse Weather</h3>
-              <a href="https://github.com/gowthamsudharsan/Vehicle-Detection-using-dual-model-Yolov7-and-ResNet50" target="_blank"><B>GitHub Link</B></a>
-          <p>
-            Developed an end-to-end deep learning solution for vehicle detection and weather classification using YOLOv7 and ResNet50 in intelligent transport systems. Achieved mAP0.5 of 60.5 (eight traffic classes) and >85% weather classification accuracy. Integrated BDD10K/DAWN datasets and deployed a real-time dashboard, enhancing smart city monitoring and traffic management.
-          </p>
-        </div>
-      </div>
-
-      <!-- Education -->
-      <div class="card">
-        <h2>Education</h2>
-        <div class="project-card">
-          <h3>MSc in Data Analytics</h3>
-          <p>National College of Ireland, Dublin | 2025<br/>
-             Core: Data Mining, ML, Deep Learning, Optimization, Analytics Programming, Visualization
-          </p>
-        </div>
-        <div class="project-card">
-          <h3>B.E. in Electronics and Communications</h3>
-          <p>MVJ College of Engineering, Bangalore, India | 2022</p>
-        </div>
-      </div>
-
-      <!-- Certifications & Achievements -->
-      <div class="card">
-        <h2>Certifications & Achievements</h2>
+        <h3>Data / Business Analyst – HSBC</h3>
+        <p>Oct 2022 – Jul 2024 | Bangalore, India</p>
         <ul>
-          <li>HSBC DAO Best Performance Award (2023–24)</li>
-          <li>Python, Alteryx, Machine Learning (Coursera/LinkedIn Learning)</li>
-          <li>Data Camp & Volunteering Certificates</li>
+          <li>Managed and queried 5.8M+ database records using SQL and PostgreSQL.</li>
+          <li>Performed data reconciliation, cleaning, wrangling, and automated reporting using Python.</li>
+          <li>Connected client systems to central database hub using Python-based integrations.</li>
+          <li>Built Power BI & QlikSense dashboards for enterprise-wide reporting.</li>
+          <li>Led data migration between systems and supported UAT testing with IT teams.</li>
+          <li>Managed global stakeholders; led a team of 4 analysts.</li>
+          <li>Worked in Agile environment: Sprint planning, JIRA tracking.</li>
+          <li>Organized Data Summit & led International Men’s and Women’s Day corporate events.</li>
+        </ul>
+
+        <br/>
+
+        <h3>General Assistant – Supervalu Killester</h3>
+        <p>Jul 2025 – Present | Dublin, Ireland</p>
+        <ul>
+          <li>Awarded <strong>Best Employee – September 2025</strong> for performance excellence.</li>
+          <li>Assigned Duty Manager for Christmas Night Shift operations.</li>
+          <li>Managed floor operations, stock control, and customer service delivery.</li>
+        </ul>
+
+        <br/>
+
+        <h3>Merchandiser – FMI (Avonmore Milk)</h3>
+        <p>Jan 2025 – Present | Dublin, Ireland</p>
+        <ul>
+          <li>Managed inventory replenishment and ensured compliance with freshness standards.</li>
+          <li>Optimized shelf placement and stock rotation to improve product visibility.</li>
         </ul>
       </div>
 
-      <!-- Projects (Optional for expansion) -->
+      <!-- TECHNICAL SKILLS -->
       <div class="card">
-        <h2>Public Projects</h2>
-        <div class="project-card">
-          <h3>PRIMARK US Sales BI Dashboard</h3>
-          <a href="https://github.com/gowthamsudharsan/PRIMARK_US_SALES_PREDICTION_USING_BI" target="_blank"><B>GitHub Link</B></a>
-        </div>
-        <div class="project-card">
-          <h3>Cultivation Forecast & Market Prices</h3>
-          <a href="https://github.com/gowthamsudharsan/Impact-of-Weather-on-Crop-Production-and-Market-price" target="_blank"><B>GitHub Link</B></a>
-        </div>
+        <h2>Technical Skills</h2>
+        <p><strong>Languages:</strong> SQL, PostgreSQL, Python</p>
+        <p><strong>BI Tools:</strong> Power BI, Tableau, QlikSense</p>
+        <p><strong>Data & ML:</strong> Machine Learning, Data Science, Generative AI, EDA, ETL</p>
+        <p><strong>Big Data:</strong> Databricks, Azure Storage, AWS (familiar)</p>
+        <p><strong>Tools:</strong> Salesforce CRM, Trello, JIRA</p>
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="card">
+        <h2>Education</h2>
+
+        <h3>MSc Data Analytics</h3>
+        <p>National College of Ireland | 2025</p>
+        <ul>
+          <li>PostgreSQL, Big Data Analytics, Machine Learning, Generative AI</li>
+          <li>Built real-time dashboards and cloud data pipelines</li>
+          <li>Thesis: Intelligent Transport System using Dual-Model Prototype</li>
+        </ul>
+
+        <h3>B.E. Electronics & Communication</h3>
+        <p>MVJ College of Engineering | 2022</p>
       </div>
 
     </div>
   </main>
 
   <footer>
-    <p>© 2025 Gowtham Sudharsan | <a href="mailto:gowthamreddy710@gmail.com">gowthamreddy710@gmail.com</a></p>
+    <p>© 2026 Gowtham Sudharsan | gowthamreddy710@gmail.com</p>
   </footer>
+
 </body>
 </html>
