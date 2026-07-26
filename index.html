@@ -1,65 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Gowtham Sudharsan | Data Analyst</title>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-<style>
-:root{--primary:#2b2d42;--accent:#ef476f;--background:#f8f9fa;--card-bg:#fff;--pastel-blue:#a8dadc;--pastel-purple:#cdb4db;}
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Times New Roman',serif;background:var(--background);color:var(--primary);line-height:1.6;}
-.container{max-width:1200px;margin:auto;padding:0 20px;}
-.hero{background:linear-gradient(135deg,var(--pastel-blue),var(--pastel-purple));padding:4rem 0;margin-bottom:2rem;text-align:center;}
-.hero h1{font-size:2.8rem;}
-.hero p{font-size:1.2rem;margin-top:.5rem;}
-.badge{display:inline-block;margin-top:12px;padding:8px 16px;background:#fff;border-radius:25px;font-weight:bold;}
-.social-links{margin-top:1.5rem;}
-.social-links a{color:var(--primary);font-size:1.6rem;margin:0 10px;text-decoration:none;}
-.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem;}
-.card{background:var(--card-bg);border-left:5px solid var(--accent);border-radius:12px;padding:2rem;box-shadow:0 5px 15px rgba(0,0,0,.05);}
-.project-card{margin-top:1rem;}
-.project-card h3{color:var(--accent);}
-.project-card a{text-decoration:none;color:var(--primary);font-weight:bold;}
-footer{background:var(--pastel-purple);text-align:center;padding:1rem;margin-top:2rem;}
-ul{margin-left:1.2rem;}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gowtham Sudharsan | Data Analyst</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+
+  <style>
+    :root {
+      --primary: #2b2d42;
+      --accent: #ef476f;
+      --background: #f8f9fa;
+      --card-bg: #ffffff;
+      --pastel-blue: #a8dadc;
+      --pastel-purple: #cdb4db;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background: var(--background);
+      color: var(--primary);
+      line-height: 1.6;
+    }
+
+    .container { max-width: 1200px; margin: auto; padding: 0 20px; }
+
+    .hero {
+      background: linear-gradient(135deg, var(--pastel-blue), var(--pastel-purple));
+      padding: 4rem 0;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .hero h1 { font-size: 2.8rem; font-weight: 600; }
+
+    .hero p { font-size: 1.2rem; margin-top: 0.5rem; }
+
+    .hero .tagline { font-size: 1rem; margin-top: 0.75rem; opacity: 0.85; }
+
+    .hero .contact-line {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .hero .contact-line span { margin: 0 8px; }
+
+    .social-links { margin-top: 1.5rem; }
+
+    .social-links a {
+      color: var(--primary);
+      font-size: 1.6rem;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover { color: var(--accent); }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.55);
+      border: 1px solid rgba(43,45,66,0.15);
+      padding: 0.3rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      margin-top: 1rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      padding-bottom: 3rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-left: 5px solid var(--accent);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover { transform: translateY(-5px); }
+
+    .card h2 {
+      margin-bottom: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .card p { margin-bottom: 0.4rem; }
+
+    .project-card { margin-bottom: 1.5rem; }
+    .project-card:last-child { margin-bottom: 0; }
+
+    .project-card h3 {
+      margin-bottom: 0.25rem;
+      color: var(--accent);
+    }
+
+    .project-card .meta {
+      font-size: 0.9rem;
+      opacity: 0.75;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 500;
+      display: inline-block;
+      margin-top: 0.4rem;
+    }
+
+    .project-card a:hover { color: var(--accent); }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .tag {
+      background: var(--background);
+      border: 1px solid rgba(43,45,66,0.15);
+      padding: 0.2rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+    }
+
+    ul { margin-left: 1.1rem; }
+
+    .full-width { grid-column: 1 / -1; }
+
+    footer {
+      background: var(--pastel-purple);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    footer a { color: var(--primary); text-decoration: none; }
+  </style>
 </head>
+
 <body>
-<section class="hero">
-<div class="container">
-<h1>Gowtham Sudharsan</h1>
-<p>Data Analyst | Business Intelligence | Business Consulting | MSc Data Analytics (NCI)</p>
-<p>SQL • Python • Tableau • Power BI • ETL • Healthcare & Banking Analytics</p>
-<div class="badge">Stamp 1G Work Visa • Valid until December 2027</div>
-<div class="social-links">
-<a href="https://www.linkedin.com/in/gowtham-sudharsan/" target="_blank"><i class="fab fa-linkedin"></i></a>
-<a href="mailto:gowthamreddy710@gmail.com"><i class="fas fa-envelope"></i></a>
-<a href="https://github.com/gowthamsudharsan" target="_blank"><i class="fab fa-github"></i></a>
-<a href="https://gowthamsudharsan.github.io/" target="_blank"><i class="fas fa-globe"></i></a>
-</div></div></section>
-<main class="container"><div class="card-grid">
-<div class="card"><h2>About</h2><p>Data Analyst with nearly 3 years of experience delivering business intelligence, analytics and enterprise data solutions across healthcare and banking. Currently working with Vhi Healthcare using SQL, Python and Tableau to build analytical datasets, automate ETL workflows and create KPI dashboards. Previously worked at HSBC delivering enterprise reporting, ETL pipelines, SQL optimisation and business insights for global stakeholders.</p></div>
-<div class="card"><h2>Core Skills</h2>
-<p><b>Programming:</b> SQL, Python, R</p>
-<p><b>Business Intelligence:</b> Tableau, Power BI, Qlik Sense, KPI Reporting, Dashboard Development</p>
-<p><b>Analytics:</b> Data Analysis, EDA, Statistical Analysis</p>
-<p><b>Data Engineering:</b> ETL, Data Modelling, Data Warehousing, Data Migration, Query Optimisation</p>
-<p><b>Professional:</b> Stakeholder Management, Business Analysis, Agile, UAT, Jira, ServiceNow</p></div>
-<div class="card"><h2>Professional Experience</h2>
-<h3>Data Analyst Intern – Vhi Healthcare</h3>
-<ul><li>Develop SQL queries for enterprise reporting and healthcare analytics.</li><li>Perform EDA, ETL and automation using Python.</li><li>Create Tableau dashboards, KPI scorecards and executive reports.</li><li>Collaborate with business stakeholders and improve claims analytics.</li></ul>
-<h3>Data Analyst – HSBC</h3>
-<ul><li>Built enterprise reporting using SQL, Python, Power BI and Qlik Sense.</li><li>Optimised SQL queries and ETL pipelines processing 5.8M+ records.</li><li>Migrated legacy SAS workflows.</li><li>Performed UAT and led four analysts.</li></ul></div>
-<div class="card"><h2>Projects</h2>
-<p><b>PRIMARK US Sales BI Dashboard</b><br><a href="https://github.com/gowthamsudharsan/PRIMARK_US_SALES_PREDICTION_USING_BI">GitHub</a></p>
-<p><b>Credit Card Fraud Detection Using Scalable Systems</b><br><a href="https://github.com/gowthamsudharsan/Credit_Card_Fraud_Detection_Using_Scalable_Systems">GitHub</a></p>
-<p><b>Impact of Weather on Crop Production</b><br><a href="https://github.com/gowthamsudharsan/Impact-of-Weather-on-Crop-Production-and-Market-price">GitHub</a></p>
-<p><b>Intelligent Transport Monitoring</b><br><a href="https://github.com/gowthamsudharsan/Vehicle-Detection-using-dual-model-Yolov7-and-ResNet50">GitHub</a></p>
-</div>
-<div class="card"><h2>Education</h2><p>MSc Data Analytics (2:1) - National College of Ireland (2024-2025)</p><p>BE Electronics & Communication - MVJ College of Engineering (2018-2022)</p></div>
-<div class="card"><h2>Achievements</h2><ul><li>HSBC DAO Best Performance Award</li><li>Led team of four analysts</li><li>5.8M+ records analysed</li><li>Enterprise BI dashboards</li></ul></div>
-</div></main>
-<footer><p>© 2026 Gowtham Sudharsan | gowthamreddy710@gmail.com</p></footer>
-</body></html>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Gowtham Sudharsan</h1>
+      <p>Data Analyst — Business Consulting &amp; Business Intelligence</p>
+      <p class="tagline">Nearly 3 Years Experience | MSc Data Analytics (NCI) | SQL · Python · Tableau · Power BI · ETL</p>
+      <p class="contact-line">
+        <span><i class="fas fa-location-dot"></i> Dublin, Ireland</span>
+        <span><i class="fas fa-phone"></i> +353-894748911</span>
+        <span><i class="fas fa-envelope"></i> gowthamreddy710@gmail.com</span>
+      </p>
+
+      <div class="badge">Stamp 1G (Work Visa) — Valid until December 2027</div>
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/gowtham-sudharsan/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:gowthamreddy710@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/gowthamsudharsan" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="card-grid">
+
+      <!-- ABOUT -->
+      <div class="card">
+        <h2>About</h2>
+        <p>
+          Data Analyst with nearly 3 years of experience delivering analytics, reporting, business intelligence and
+          enterprise data solutions across banking and healthcare. Skilled in translating business requirements into
+          technical solutions, optimizing SQL queries, automating analytical workflows, and delivering actionable
+          insights that support operational efficiency and business decision-making.
+        </p>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="card">
+        <h2>Core Skills</h2>
+        <p><strong>Programming:</strong> SQL (Advanced), Python, R</p>
+        <p><strong>Analytics:</strong> Alteryx, EDA, Statistical Analysis, Business Intelligence, Ad-hoc Analysis</p>
+        <p><strong>Reporting:</strong> Tableau, Power BI, Qlik Sense, Advanced Excel (Pivot Tables, Power Query, Macros), KPI Reporting, Executive Scorecards</p>
+        <p><strong>Data Engineering:</strong> ETL, Data Modelling, Data Warehousing, Data Migration, Data Cleansing, Data Validation, Query Optimisation</p>
+        <p><strong>Technologies:</strong> Azure, MongoDB, Databricks (Familiar), Apache Spark, PySpark, Hadoop, REST APIs, Postman</p>
+        <p><strong>Professional:</strong> Requirements Gathering, Stakeholder Management, UAT, Agile Scrum, Jira, ServiceNow, Process Improvement</p>
+      </div>
+
+      <!-- EXPERIENCE -->
+      <div class="card full-width">
+        <h2>Professional Experience</h2>
+
+        <div class="project-card">
+          <h3>Data Analyst Intern — Vhi Healthcare</h3>
+          <p class="meta">Jun 2026 – Present | Dublin, Ireland</p>
+          <ul>
+            <li>Develop SQL queries to build, transform, maintain, and optimize healthcare datasets supporting enterprise reporting and business intelligence</li>
+            <li>Perform EDA, ETL processes, and advanced analytics using Python to improve data quality and reporting accuracy</li>
+            <li>Design Tableau dashboards, KPI scorecards, and executive reports to monitor healthcare operations and claims performance</li>
+            <li>Collaborate with business stakeholders to gather reporting requirements and present analytical insights</li>
+            <li>Analyze claims data to identify trends, inefficiencies, and cost-saving opportunities</li>
+            <li>Support data governance, reporting enhancements, and continuous process improvement</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <h3>Data Analyst — HSBC</h3>
+          <p class="meta">Oct 2022 – Jul 2024 | Bengaluru, India</p>
+          <ul>
+            <li>Gathered and translated business requirements into scalable reporting and analytical solutions across global stakeholders</li>
+            <li>Optimized complex SQL queries and automated Python workflows, improving reporting performance and operational efficiency</li>
+            <li>Supported migration of legacy SAS workflows to modern SQL and Python solutions</li>
+            <li>Designed ETL pipelines processing 5.8M+ customer records while maintaining data quality and reconciliation</li>
+            <li>Built Power BI and Qlik Sense dashboards delivering KPI reporting and executive scorecards</li>
+            <li>Performed UAT, functional testing, documentation, and production support for enterprise reporting applications</li>
+            <li>Worked within Agile Scrum teams using Jira, collaborating with cross-functional technology teams</li>
+            <li>Led a team of four analysts and received the HSBC DAO Best Performance Award</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PROJECTS -->
+      <div class="card full-width">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+          <h3>PRIMARK US Sales BI Dashboard</h3>
+          <p>Built interactive BI dashboards to forecast sales using historical and external datasets, enabling stakeholder decision-making through KPI tracking and visual analytics.</p>
+          <div class="tag-row">
+            <span class="tag">SQL</span><span class="tag">Power BI</span><span class="tag">Forecasting</span>
+          </div>
+          <a href="https://github.com/gowthamsudharsan/PRIMARK_US_SALES_PREDICTION_USING_BI" target="_blank">View Project →</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Credit Card Fraud Detection</h3>
+          <p>Developed a scalable big data pipeline and classification model to detect fraudulent transactions.</p>
+          <div class="tag-row">
+            <span class="tag">Python</span><span class="tag">Apache Spark</span><span class="tag">ETL</span><span class="tag">Machine Learning</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Impact of Weather on Crop Production</h3>
+          <p>Integrated multi-source datasets via API to analyze the relationship between weather patterns and crop yield.</p>
+          <div class="tag-row">
+            <span class="tag">Python</span><span class="tag">MongoDB</span><span class="tag">PostgreSQL</span><span class="tag">Power BI</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Intelligent Transport Monitoring</h3>
+          <p>Built a system for transport monitoring and analytics using deep learning models, with dashboard reporting for system optimization.</p>
+          <div class="tag-row">
+            <span class="tag">YOLOv7</span><span class="tag">ResNet50</span><span class="tag">Dashboard Reporting</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="card">
+        <h2>Education</h2>
+
+        <div class="project-card">
+          <h3>MSc Data Analytics (2:1)</h3>
+          <p class="meta">National College of Ireland, Dublin | 2024 – 2025</p>
+        </div>
+
+        <div class="project-card">
+          <h3>BE Electronics &amp; Communications (7.9 CGPA)</h3>
+          <p class="meta">MVJ College of Engineering, Bengaluru | 2018 – 2022</p>
+        </div>
+      </div>
+
+      <!-- CERTIFICATIONS -->
+      <div class="card">
+        <h2>Certifications</h2>
+        <ul>
+          <li>Artificial Intelligence Foundations: Machine Learning</li>
+          <li>Python Programming</li>
+          <li>Alteryx Designer Core</li>
+          <li>HSBC DAO Best Performance Award</li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Gowtham Sudharsan | <a href="mailto:gowthamreddy710@gmail.com">gowthamreddy710@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>
